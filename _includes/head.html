@@ -1,0 +1,19 @@
+	<head>
+		<meta charset="utf-8">
+
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
+
+		<link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+		<link rel="shortcut icon" type="image/x-icon" href="{{ "/apple-touch-icon-precomposed.png" | prepend: site.baseurl }}">
+
+		<link href="http://fonts.googleapis.com/css?family=Orbitron:900" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300,400,700,400italic,700italic,900" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+		<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+		<script async src="{{ "/js/vendor/pf-m.min.js" | prepend: site.baseurl }}"></script>
+	</head>
